@@ -16,7 +16,7 @@ public class Dev {
 	public void inicializarCAR() {
 		
 		areaProcesos.add(new AreaProceso("CAR"));
-		areaProcesos.get(0).agregarGg(new Gg("Root causes of selected outcomes are systematically determined"));
+		areaProcesos.get(0).agregarGg(new Gg("	Root causes of selected outcomes are systematically determined"));
 		areaProcesos.get(0).getgG().get(0).agregarActividad(new Actividades("Select outcomes for analysis."));
 		areaProcesos.get(0).getgG().get(0).agregarActividad(new Actividades("Perform causal analysis of selected outcomes and propose actions to address them."));
 		areaProcesos.get(0).agregarGg(new Gg("Root causes of selected outcomes are systematically addressed"));
@@ -27,17 +27,48 @@ public class Dev {
 	
 	public void inicializarCM() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("CM"));
+		areaProcesos.get(1).agregarGg(new Gg("Baselines of identified work products are established"));
+		areaProcesos.get(1).getgG().get(0).agregarActividad(new Actividades("Identify configuration items, components, and related work products to be placed under configuration management"));
+		areaProcesos.get(1).getgG().get(0).agregarActividad(new Actividades("Establish and maintain a configuration management and change management system for controlling work products."));
+		areaProcesos.get(1).getgG().get(0).agregarActividad(new Actividades("Create or release baselines for internal use and for delivery to the customer."));
+		areaProcesos.get(1).agregarGg(new Gg("Changes to the work products under configuration management are tracked and controlled"));
+		areaProcesos.get(1).getgG().get(1).agregarActividad(new Actividades("Track change requests for configuration items."));
+		areaProcesos.get(1).getgG().get(1).agregarActividad(new Actividades("Control changes to configuration items."));
+		areaProcesos.get(1).agregarGg(new Gg(" Integrity of baselines is established and maintained"));
+		areaProcesos.get(1).getgG().get(2).agregarActividad(new Actividades("Establish and maintain records describing configuration items."));
+		areaProcesos.get(1).getgG().get(2).agregarActividad(new Actividades("Perform configuration audits to maintain the integrity of configuration baselines"));
+		
 	}
 	
 	public void inicializarDAR() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("DAR"));
+		areaProcesos.get(2).agregarGg(new Gg("Decisions are based on an evaluation of alternatives using established criteria."));
+		areaProcesos.get(2).getgG().get(0).agregarActividad(new Actividades("Establish and maintain guidelines to determine which issues are subject to a formal evaluation process."));
+		areaProcesos.get(2).getgG().get(0).agregarActividad(new Actividades("Establish and maintain criteria for evaluating alternatives and the relative ranking of these criteria."));
+		areaProcesos.get(2).getgG().get(0).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		areaProcesos.get(2).getgG().get(0).agregarActividad(new Actividades("Select evaluation methods"));
+		areaProcesos.get(2).getgG().get(0).agregarActividad(new Actividades("Evaluate alternative solutions using established criteria and methods"));
+		areaProcesos.get(2).getgG().get(0).agregarActividad(new Actividades("Select solutions from alternatives based on evaluation criteria."));
 	}
 	
 	public void inicializarIPM() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("IPM"));
+		areaProcesos.get(3).agregarGg(new Gg("Decisions are based on an evaluation of alternatives using established criteria."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain guidelines to determine which issues are subject to a formal evaluation process."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain criteria for evaluating alternatives and the relative ranking of these criteria."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain guidelines to determine which issues are subject to a formal evaluation process."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain criteria for evaluating alternatives and the relative ranking of these criteria."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		areaProcesos.get(3).agregarGg(new Gg("Decisions are based on an evaluation of alternatives using established criteria."));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		
 	}
 	
 	public void inicializarMA() {
