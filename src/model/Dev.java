@@ -56,35 +56,41 @@ public class Dev {
 	public void inicializarIPM() {
 		
 		areaProcesos.add(new AreaProceso("IPM"));
-		areaProcesos.get(3).agregarGg(new Gg("Decisions are based on an evaluation of alternatives using established criteria."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain guidelines to determine which issues are subject to a formal evaluation process."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain criteria for evaluating alternatives and the relative ranking of these criteria."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain guidelines to determine which issues are subject to a formal evaluation process."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain criteria for evaluating alternatives and the relative ranking of these criteria."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
-		areaProcesos.get(3).agregarGg(new Gg("Decisions are based on an evaluation of alternatives using established criteria."));
-		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
-		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
-		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Identify alternative solutions to address issues."));
+		areaProcesos.get(3).agregarGg(new Gg("The project is conducted using a defined process tailored from the organization’s set of standard processes"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the project’s defined process from project startup through the life of the project."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Use organizational process assets and the measurement repository for estimating and planning project activities"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the project’s work environment based on the organization’s work environment standards."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Integrate the project plan and other plans that affect the project to describe the project’s defined process"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Manage the project using the project plan, other plans that affect the project, and the project’s defined process."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain teams"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Contribute process related experiences to organizational process assets."));
+		
+		areaProcesos.get(3).agregarGg(new Gg("Coordination and collaboration between the project and relevant stakeholders are conducted."));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Manage the involvement of relevant stakeholders in the project. "));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Participate with relevant stakeholders to identify, negotiate, and track critical dependencies."));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Resolve issues with relevant stakeholders."));
 		
 	}
 	
 	public void inicializarMA() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("MA"));
+		areaProcesos.get(3).agregarGg(new Gg("The project is conducted using a defined process tailored from the organization’s set of standard processes"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the project’s defined process from project startup through the life of the project."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Use organizational process assets and the measurement repository for estimating and planning project activities"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the project’s work environment based on the organization’s work environment standards."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Integrate the project plan and other plans that affect the project to describe the project’s defined process"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Manage the project using the project plan, other plans that affect the project, and the project’s defined process."));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain teams"));
+		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Contribute process related experiences to organizational process assets."));
+		
+		areaProcesos.get(3).agregarGg(new Gg("Coordination and collaboration between the project and relevant stakeholders are conducted."));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Manage the involvement of relevant stakeholders in the project. "));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Participate with relevant stakeholders to identify, negotiate, and track critical dependencies."));
+		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Resolve issues with relevant stakeholders."));
 	}
 	
-	public void inicializarVER() {
-		
-		areaProcesos.add(new AreaProceso("CAR"));
-	}
 	
-	public void inicializarVAL() {
-		
-		areaProcesos.add(new AreaProceso("CAR"));
-	}
 	
 	public void inicializarOPD() {
 		
@@ -157,6 +163,15 @@ public class Dev {
 	}
 	
 	public void inicializarTS() {
+		
+		areaProcesos.add(new AreaProceso("CAR"));
+	}
+	public void inicializarVER() {
+		
+		areaProcesos.add(new AreaProceso("CAR"));
+	}
+	
+	public void inicializarVAL() {
 		
 		areaProcesos.add(new AreaProceso("CAR"));
 	}
