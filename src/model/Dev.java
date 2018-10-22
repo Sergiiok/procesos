@@ -75,26 +75,32 @@ public class Dev {
 	public void inicializarMA() {
 		
 		areaProcesos.add(new AreaProceso("MA"));
-		areaProcesos.get(3).agregarGg(new Gg("The project is conducted using a defined process tailored from the organization’s set of standard processes"));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the project’s defined process from project startup through the life of the project."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Use organizational process assets and the measurement repository for estimating and planning project activities"));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the project’s work environment based on the organization’s work environment standards."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Integrate the project plan and other plans that affect the project to describe the project’s defined process"));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Manage the project using the project plan, other plans that affect the project, and the project’s defined process."));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Establish and maintain teams"));
-		areaProcesos.get(3).getgG().get(0).agregarActividad(new Actividades("Contribute process related experiences to organizational process assets."));
+		areaProcesos.get(4).agregarGg(new Gg("Measurement objectives and activities are aligned with identified information needs and objectives."));
+		areaProcesos.get(4).getgG().get(0).agregarActividad(new Actividades("Establish and maintain measurement objectives derived from identified information needs and objectives."));
+		areaProcesos.get(4).getgG().get(0).agregarActividad(new Actividades("Specify measures to address measurement objectives."));
+		areaProcesos.get(4).getgG().get(0).agregarActividad(new Actividades("Specify how measurement data are obtained and stored."));
+		areaProcesos.get(4).getgG().get(0).agregarActividad(new Actividades("Specify how measurement data are analyzed and communicated"));
 		
-		areaProcesos.get(3).agregarGg(new Gg("Coordination and collaboration between the project and relevant stakeholders are conducted."));
-		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Manage the involvement of relevant stakeholders in the project. "));
-		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Participate with relevant stakeholders to identify, negotiate, and track critical dependencies."));
-		areaProcesos.get(3).getgG().get(1).agregarActividad(new Actividades("Resolve issues with relevant stakeholders."));
+		areaProcesos.get(4).agregarGg(new Gg("Measurement results, which address identified information needs and objectives, are provided."));
+		areaProcesos.get(4).getgG().get(1).agregarActividad(new Actividades("Obtain specified measurement data "));
+		areaProcesos.get(4).getgG().get(1).agregarActividad(new Actividades("Analyze and interpret measurement data."));
+		areaProcesos.get(4).getgG().get(1).agregarActividad(new Actividades("Manage and store measurement data, measurement specifications, and analysis results."));
+		areaProcesos.get(4).getgG().get(1).agregarActividad(new Actividades("Communicate results of measurement and analysis activities to all relevant stakeholders."));
 	}
 	
 	
 	
 	public void inicializarOPD() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("OPD"));
+		areaProcesos.get(5).agregarGg(new Gg("A set of organizational process assets is established and maintained."));
+		areaProcesos.get(5).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the organization’s set of standard processes"));
+		areaProcesos.get(5).getgG().get(0).agregarActividad(new Actividades("Establish and maintain descriptions of lifecycle models approved for use in the organization"));
+		areaProcesos.get(5).getgG().get(0).agregarActividad(new Actividades("Establish and maintain tailoring criteria and guidelines for the organization’s set of standard processes."));
+		areaProcesos.get(5).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the organization’s measurement repository."));
+		areaProcesos.get(5).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the organization’s process asset library."));
+		areaProcesos.get(5).getgG().get(0).agregarActividad(new Actividades("Establish and maintain work environment standards."));
+		areaProcesos.get(5).getgG().get(0).agregarActividad(new Actividades("Establish and maintain organizational rules and guidelines for the structure, formation,and operation of teams."));
 	}
 	
 	public void inicializarOPF() {
