@@ -105,27 +105,86 @@ public class Dev {
 	
 	public void inicializarOPF() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
-	}
-	
-	public void inicializarOPP() {
+		areaProcesos.add(new AreaProceso("OPF"));
+		areaProcesos.get(6).agregarGg(new Gg("Strengths, weaknesses, and improvement opportunities for the organization’s processes are identified periodically and as needed."));
+		areaProcesos.get(6).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the description of process needs and objectives for the organization"));
+		areaProcesos.get(6).getgG().get(0).agregarActividad(new Actividades("Appraise the organization’s processes periodically and as needed to maintain an understanding of their strengths and weaknesses."));
+		areaProcesos.get(6).getgG().get(0).agregarActividad(new Actividades("Identify improvements to the organization’s processes and process assets."));
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.get(6).agregarGg(new Gg(" Process actions that address improvements to the organization’s processes and process assets are planned and implemented."));
+		areaProcesos.get(6).getgG().get(1).agregarActividad(new Actividades("Establish and maintain process action plans to address improvements to the organization’s processes and process assets."));
+		areaProcesos.get(6).getgG().get(1).agregarActividad(new Actividades("Implement process action plans"));
+		
+		areaProcesos.get(6).agregarGg(new Gg(" Organizational process assets are deployed across the organization and process related experiences are incorporated into organizational process assets."));
+		areaProcesos.get(6).getgG().get(2).agregarActividad(new Actividades("Deploy organizational process assets across the organization."));
+		areaProcesos.get(6).getgG().get(2).agregarActividad(new Actividades("Deploy the organization’s set of standard processes to projects at their startup and deploy changes to them as appropriate throughout the life of each project"));
+		areaProcesos.get(6).getgG().get(2).agregarActividad(new Actividades("Monitor the implementation of the organization’s set of standard processes and use of process assets on all projects."));
+		areaProcesos.get(6).getgG().get(2).agregarActividad(new Actividades("Incorporate process related experiences derived from planning and performing the process into organizational process assets."));
 	}
 	
 	public void inicializarOPM() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("OPM"));
+		areaProcesos.get(7).agregarGg(new Gg("The organization’s business performance is managed using statistical and other quantitative techniques to understand process performance shortfalls and identify areas for process improvement."));
+		areaProcesos.get(7).getgG().get(0).agregarActividad(new Actividades("Maintain business objectives based on an understanding of business strategies and actual performance results"));
+		areaProcesos.get(7).getgG().get(0).agregarActividad(new Actividades("Analyze process performance data to determine the organization’s ability to meet identified business objectives. "));
+		areaProcesos.get(7).getgG().get(0).agregarActividad(new Actividades("Identify potential areas for improvement that could contribute to meeting business objectives. "));
+		
+		areaProcesos.get(7).agregarGg(new Gg(" Improvements are proactively identified, evaluated using statistical and other quantitative techniques, and selected for deployment based on their contribution to meeting quality and process performance objectives"));
+		areaProcesos.get(7).getgG().get(1).agregarActividad(new Actividades("Elicit and categorize suggested improvements"));
+		areaProcesos.get(7).getgG().get(1).agregarActividad(new Actividades("Analyze suggested improvements for their possible impact on achieving the organization’s quality and process performance objectives. "));
+		areaProcesos.get(7).getgG().get(1).agregarActividad(new Actividades("Validate selected improvements."));
+		areaProcesos.get(7).getgG().get(1).agregarActividad(new Actividades("Select and implement improvements for deployment throughout the organization based on an evaluation of costs, benefits and other factors."));
+		
+		areaProcesos.get(7).agregarGg(new Gg("Measurable improvements to the organization’s processes and technologies are deployed and evaluated using statistical and other quantitative techniques. "));
+		areaProcesos.get(7).getgG().get(2).agregarActividad(new Actividades("Establish and maintain plans for deploying selected improvements."));
+		areaProcesos.get(7).getgG().get(2).agregarActividad(new Actividades("Manage the deployment of selected improvements."));
+		areaProcesos.get(7).getgG().get(2).agregarActividad(new Actividades("Evaluate the effects of deployed improvements on quality and process performance using statistical and other quantitative techniques. "));
+		
+	}
+	
+	public void inicializarOPP() {
+		
+		areaProcesos.add(new AreaProceso("OPP"));
+		areaProcesos.get(8).agregarGg(new Gg("Baselines and models, which characterize the expected process performance of the organization’s set of standard processes, are established and maintained."));
+		areaProcesos.get(8).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the organization’s quantitative objectives for quality and process performance, which are traceable to business objectives."));
+		areaProcesos.get(8).getgG().get(0).agregarActividad(new Actividades("Select processes or subprocesses in the organization’s set of standard processes to be included in the organization’s process performance analyses and maintain traceability to business objectives."));
+		areaProcesos.get(8).getgG().get(0).agregarActividad(new Actividades(" Establish and maintain definitions of measures to be included in the organization’s process performance analyses. "));
+		areaProcesos.get(8).getgG().get(0).agregarActividad(new Actividades("Analyze the performance of the selected processes, and establish and maintain the process performance baselines. "));
+		areaProcesos.get(8).getgG().get(0).agregarActividad(new Actividades("Establish and maintain process performance models for the organization’s set of standard processes"));	
+		
 	}
 	
 	public void inicializarOT() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("OT"));
+		areaProcesos.get(9).agregarGg(new Gg("A training capability, which supports the roles in the organization, is established and maintained."));
+		areaProcesos.get(9).getgG().get(0).agregarActividad(new Actividades("Establish and maintain strategic training needs of the organization."));
+		areaProcesos.get(9).getgG().get(0).agregarActividad(new Actividades("Determine which training needs are the responsibility of the organization and which are left to the individual project or support group."));
+		areaProcesos.get(9).getgG().get(0).agregarActividad(new Actividades("Establish and maintain an organizational training tactical plan"));
+		areaProcesos.get(9).getgG().get(0).agregarActividad(new Actividades("Establish and maintain a training capability to address organizational training needs."));	
+		areaProcesos.get(9).agregarGg(new Gg("Training for individuals to perform their roles effectively is provided."));
+		areaProcesos.get(9).getgG().get(1).agregarActividad(new Actividades("Deliver training following the organizational training tactical plan."));
+		areaProcesos.get(9).getgG().get(1).agregarActividad(new Actividades("Establish and maintain records of organizational training."));	
+		areaProcesos.get(9).getgG().get(1).agregarActividad(new Actividades("Assess the effectiveness of the organization’s training program "));
+			
 	}
 	
 	public void inicializarPI() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("PI"));
+		areaProcesos.get(10).agregarGg(new Gg(" Preparation for product integration is conducted. "));
+		areaProcesos.get(10).getgG().get(0).agregarActividad(new Actividades("Establish and maintain a product integration strategy. "));
+		areaProcesos.get(10).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the environment needed to support the integration of the product components."));
+		areaProcesos.get(10).getgG().get(0).agregarActividad(new Actividades("Establish and maintain procedures and criteria for integration of the product components. "));
+		areaProcesos.get(10).agregarGg(new Gg("The product component interfaces, both internal and external, are compatible."));
+		areaProcesos.get(10).getgG().get(1).agregarActividad(new Actividades("Review interface descriptions for coverage and completeness."));
+		areaProcesos.get(10).getgG().get(1).agregarActividad(new Actividades("Manage internal and external interface definitions, designs, and changes for products and product components. "));	
+		areaProcesos.get(10).agregarGg(new Gg("Verified product components are assembled and the integrated, verified and validated product is delivered."));
+		areaProcesos.get(10).getgG().get(2).agregarActividad(new Actividades("1 Confirm, prior to assembly, that each product component required to assemble the product has been properly identified, behaves according to its description, and that the product component interfaces comply with the interface descriptions. "));
+		areaProcesos.get(10).getgG().get(2).agregarActividad(new Actividades("Assemble product components according to the product integration strategy and procedures. "));	
+		areaProcesos.get(10).getgG().get(2).agregarActividad(new Actividades("Evaluate assembled product components for interface compatibility.  "));
+		areaProcesos.get(10).getgG().get(2).agregarActividad(new Actividades(" Package the assembled product or product component and deliver it to the customer."));	
 	}
 	
 	public void inicializarPMC() {
