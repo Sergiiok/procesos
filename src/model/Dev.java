@@ -187,58 +187,184 @@ public class Dev {
 		areaProcesos.get(10).getgG().get(2).agregarActividad(new Actividades(" Package the assembled product or product component and deliver it to the customer."));	
 	}
 	
-	public void inicializarPMC() {
+public void inicializarPMC() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("PMC"));
+		areaProcesos.get(11).agregarGg(new Gg("Actual project performance and progress are monitored against the project plan."));
+		areaProcesos.get(11).getgG().get(0).agregarActividad(new Actividades("Monitor actual values of project planning parameters against the project plan."));
+		areaProcesos.get(11).getgG().get(0).agregarActividad(new Actividades("Monitor commitments against those identified in the project plan."));
+		areaProcesos.get(11).getgG().get(0).agregarActividad(new Actividades("Monitor risks against those risks identified in the project plan."));
+		areaProcesos.get(11).getgG().get(0).agregarActividad(new Actividades("Monitor the management of project data against the project plan."));
+		areaProcesos.get(11).getgG().get(0).agregarActividad(new Actividades("Monitor stakeholder involvement against the project plan."));
+		areaProcesos.get(11).getgG().get(0).agregarActividad(new Actividades("Periodically review the project’s progress, performance, and issues."));
+		areaProcesos.get(11).getgG().get(0).agregarActividad(new Actividades("Review the project’s accomplishments and results at selected project milestones."));
+		
+		areaProcesos.get(11).agregarGg(new Gg(" Corrective actions are managed to closure when the project’s performance or results deviate significantly from the plan."));
+		areaProcesos.get(11).getgG().get(1).agregarActividad(new Actividades("Collect and analyze issues and determine corrective actions to address them."));
+		areaProcesos.get(11).getgG().get(1).agregarActividad(new Actividades("Take corrective action on identified issues"));
+		areaProcesos.get(11).getgG().get(1).agregarActividad(new Actividades("Manage corrective actions to closure."));
 	}
 	
 	public void inicializarPP() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("PP"));
+		areaProcesos.get(12).agregarGg(new Gg("Estimates of project planning parameters are established and maintained."));
+		areaProcesos.get(12).getgG().get(0).agregarActividad(new Actividades("Establish a top-level work breakdown structure (WBS) to estimate the scope of the project"));
+		areaProcesos.get(12).getgG().get(0).agregarActividad(new Actividades("Establish and maintain estimates of work product and task attributes"));
+		areaProcesos.get(12).getgG().get(0).agregarActividad(new Actividades("Define project lifecycle phases on which to scope the planning effort."));
+		areaProcesos.get(12).getgG().get(0).agregarActividad(new Actividades("Estimate the project’s effort and cost for work products and tasks based on estimation rationale."));
+		
+		areaProcesos.get(12).agregarGg(new Gg("Actual project performance and progress are monitored against the project plan."));
+		areaProcesos.get(12).getgG().get(1).agregarActividad(new Actividades("Establish and maintain the project’s budget and schedule."));
+		areaProcesos.get(12).getgG().get(1).agregarActividad(new Actividades("Identify and analyze project risks."));
+		areaProcesos.get(12).getgG().get(1).agregarActividad(new Actividades("Plan for the management of project data"));
+		areaProcesos.get(12).getgG().get(1).agregarActividad(new Actividades("Plan for resources to perform the project. "));
+		areaProcesos.get(12).getgG().get(1).agregarActividad(new Actividades("Plan for knowledge and skills needed to perform the project. "));
+		areaProcesos.get(12).getgG().get(1).agregarActividad(new Actividades("Plan the involvement of identified stakeholders."));
+		areaProcesos.get(12).getgG().get(1).agregarActividad(new Actividades("Establish and maintain the overall project plan."));
+		
+		areaProcesos.get(12).agregarGg(new Gg("Actual project performance and progress are monitored against the project plan."));
+		areaProcesos.get(12).getgG().get(2).agregarActividad(new Actividades("Review all plans that affect the project to understand project commitments."));
+		areaProcesos.get(12).getgG().get(2).agregarActividad(new Actividades("Adjust the project plan to reconcile available and estimated resources."));
+		areaProcesos.get(12).getgG().get(2).agregarActividad(new Actividades("Obtain commitment from relevant stakeholders responsible for performing and supporting plan execution."));
 	}
 	
 	public void inicializarPPQA() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("PPQA"));
+		areaProcesos.get(13).agregarGg(new Gg("Adherence of the performed process and associated work products to applicable process descriptions, standards, and procedures is objectively evaluated."));
+		areaProcesos.get(13).getgG().get(0).agregarActividad(new Actividades("Objectively evaluate selected performed processes against applicable process descriptions, standards, and procedures."));
+		areaProcesos.get(13).getgG().get(0).agregarActividad(new Actividades("Objectively evaluate selected work products against applicable process descriptions, standards, and procedures."));
+		
+		areaProcesos.get(13).agregarGg(new Gg("Noncompliance issues are objectively tracked and communicated, and resolution is ensured."));
+		areaProcesos.get(13).getgG().get(1).agregarActividad(new Actividades("Communicate quality issues and ensure the resolution of noncompliance issues with the staff and managers."));
+		areaProcesos.get(13).getgG().get(1).agregarActividad(new Actividades("Establish and maintain records of quality assurance activities."));
 	}
 	
 	public void inicializarQPM() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("QPM"));
+		areaProcesos.get(14).agregarGg(new Gg("Preparation for quantitative management is conducted. "));
+		areaProcesos.get(14).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the project’s quality and process performance objectives. "));
+		areaProcesos.get(14).getgG().get(0).agregarActividad(new Actividades("Using statistical and other quantitative techniques, compose a defined process that enables the project to achieve its quality and process performance objectives. "));
+		areaProcesos.get(14).getgG().get(0).agregarActividad(new Actividades("Select subprocesses and attributes critical to evaluating performance and that help to achieve the project’s quality and process performance objectives."));
+		areaProcesos.get(14).getgG().get(0).agregarActividad(new Actividades("Select measures and analytic techniques to be used in quantitative management. "));
+		
+		areaProcesos.get(14).agregarGg(new Gg("The project is quantitatively managed."));
+		areaProcesos.get(14).getgG().get(1).agregarActividad(new Actividades("Monitor the performance of selected subprocesses using statistical and other quantitative techniques."));
+		areaProcesos.get(14).getgG().get(1).agregarActividad(new Actividades("Manage the project using statistical and other quantitative techniques to determine whether or not the project’s objectives for quality and process performance will be satisfied."));
+		areaProcesos.get(14).getgG().get(1).agregarActividad(new Actividades("Perform root cause analysis of selected issues to address deficiencies in achieving the project’s quality and process performance objectives."));
 	}
 	
 	public void inicializarRD() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("RD"));
+		areaProcesos.get(15).agregarGg(new Gg("Stakeholder needs, expectations, constraints, and interfaces are collected and translated into customer requirements."));
+		areaProcesos.get(15).getgG().get(0).agregarActividad(new Actividades("Elicit stakeholder needs, expectations, constraints and interfaces for all phases of the product lifecycle. "));
+		areaProcesos.get(15).getgG().get(0).agregarActividad(new Actividades("Transform stakeholder needs, expectations, constraints and interfaces into prioritized customer requirements"));
+		
+		areaProcesos.get(15).agregarGg(new Gg("Customer requirements are refined and elaborated to develop product and product component requirements.  "));
+		areaProcesos.get(15).getgG().get(1).agregarActividad(new Actividades("Establish and maintain product and product component requirements, which are based on the customer requirements. "));
+		areaProcesos.get(15).getgG().get(1).agregarActividad(new Actividades("Allocate the requirements for each product component. "));
+		areaProcesos.get(15).getgG().get(1).agregarActividad(new Actividades("Identify interface requirements. "));
+		
+		areaProcesos.get(15).agregarGg(new Gg("The requirements are analyzed and validated. "));
+		areaProcesos.get(15).getgG().get(2).agregarActividad(new Actividades("Establish and maintain operational concepts and associated scenarios. "));
+		areaProcesos.get(15).getgG().get(2).agregarActividad(new Actividades("Establish and maintain a definition of required functionality and quality attributes. "));
+		areaProcesos.get(15).getgG().get(2).agregarActividad(new Actividades("Analyze requirements to ensure that they are necessary and sufficient."));
+		areaProcesos.get(15).getgG().get(2).agregarActividad(new Actividades("Analyze requirements to balance stakeholder needs and constraints. "));
+		areaProcesos.get(15).getgG().get(2).agregarActividad(new Actividades("Validate requirements to ensure the resulting product will perform as intended in the end user’s environment."));
 	}
 	
 	public void inicializarREQM() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("REQM"));
+		areaProcesos.get(16).agregarGg(new Gg("Requirements are managed and inconsistencies with plans and work products are identified."));
+		areaProcesos.get(16).getgG().get(0).agregarActividad(new Actividades("Develop an understanding with the requirements providers on the meaning of the requirements."));
+		areaProcesos.get(16).getgG().get(0).agregarActividad(new Actividades("Obtain commitment to requirements from project participants."));
+		areaProcesos.get(16).getgG().get(0).agregarActividad(new Actividades("Manage changes to requirements as they evolve during the project."));
+		areaProcesos.get(16).getgG().get(0).agregarActividad(new Actividades("Maintain bidirectional traceability among requirements and work products"));
+		areaProcesos.get(16).getgG().get(0).agregarActividad(new Actividades("Ensure that project plans and work products remain aligned with the requirements."));
 	}
 	
 	public void inicializarRSKM() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("RSKM"));
+		areaProcesos.get(17).agregarGg(new Gg("Preparation for risk management is conducted."));
+		areaProcesos.get(17).getgG().get(0).agregarActividad(new Actividades("Determine risk sources and categories."));
+		areaProcesos.get(17).getgG().get(0).agregarActividad(new Actividades("Define parameters used to analyze and categorize risks and to control the risk management effort."));
+		areaProcesos.get(17).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the strategy to be used for risk management."));
+		
+		areaProcesos.get(17).agregarGg(new Gg("Risks are identified and analyzed to determine their relative importance."));
+		areaProcesos.get(17).getgG().get(1).agregarActividad(new Actividades("Identify and document risks."));
+		areaProcesos.get(17).getgG().get(1).agregarActividad(new Actividades("Evaluate and categorize each identified risk using defined risk categories and parameters, and determine its relative priority."));
+		
+		areaProcesos.get(17).agregarGg(new Gg("Risks are handled and mitigated as appropriate to reduce adverse impacts on achieving objectives."));
+		areaProcesos.get(17).getgG().get(2).agregarActividad(new Actividades("Develop a risk mitigation plan in accordance with the risk management strategy."));
+		areaProcesos.get(17).getgG().get(2).agregarActividad(new Actividades("Monitor the status of each risk periodically and implement the risk mitigation plan as appropriate."));
 	}
 	
 	public void inicializarSAM() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("SAM"));
+		areaProcesos.get(18).agregarGg(new Gg("Agreements with the suppliers are established and maintained."));
+		areaProcesos.get(18).getgG().get(0).agregarActividad(new Actividades("Determine the type of acquisition for each product or product component to be acquired."));
+		areaProcesos.get(18).getgG().get(0).agregarActividad(new Actividades("Select suppliers based on an evaluation of their ability to meet the specified requirements and established criteria."));
+		areaProcesos.get(18).getgG().get(0).agregarActividad(new Actividades("Establish and maintain supplier agreements."));
+		
+		areaProcesos.get(18).agregarGg(new Gg("Agreements with suppliers are satisfied by both the project and the supplier."));
+		areaProcesos.get(18).getgG().get(1).agregarActividad(new Actividades("Perform activities with the supplier as specified in the supplier agreement."));
+		areaProcesos.get(18).getgG().get(1).agregarActividad(new Actividades("Ensure that the supplier agreement is satisfied before accepting the acquired product."));
+		areaProcesos.get(18).getgG().get(1).agregarActividad(new Actividades("Ensure the transition of products acquired from the supplier."));
 	}
 	
 	public void inicializarTS() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("TS"));
+		areaProcesos.get(19).agregarGg(new Gg("Product or product component solutions are selected from alternative solutions."));
+		areaProcesos.get(19).getgG().get(0).agregarActividad(new Actividades("Develop alternative solutions and selection criteria."));
+		areaProcesos.get(19).getgG().get(0).agregarActividad(new Actividades("Select the product component solutions based on selection criteria."));
+		
+		areaProcesos.get(19).agregarGg(new Gg("Product or product component designs are developed."));
+		areaProcesos.get(19).getgG().get(1).agregarActividad(new Actividades("Develop a design for the product or product component."));
+		areaProcesos.get(19).getgG().get(1).agregarActividad(new Actividades("Establish and maintain a technical data package."));
+		areaProcesos.get(19).getgG().get(1).agregarActividad(new Actividades("Design product component interfaces using established criteria."));
+		areaProcesos.get(19).getgG().get(1).agregarActividad(new Actividades("Evaluate whether the product components should be developed, purchased, or reused based on established criteria."));
+				
+		areaProcesos.get(19).agregarGg(new Gg("Preparation for risk management is conducted."));
+		areaProcesos.get(19).getgG().get(2).agregarActividad(new Actividades("Implement the designs of the product components."));
+		areaProcesos.get(19).getgG().get(2).agregarActividad(new Actividades("Develop and maintain the end-use documentation."));
 	}
 	public void inicializarVER() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("VER"));
+		areaProcesos.get(20).agregarGg(new Gg("Preparation for validation is conducted."));
+		areaProcesos.get(20).getgG().get(0).agregarActividad(new Actividades("Select products and product components to be validated and validation methods to be used."));
+		areaProcesos.get(20).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the environment needed to support validation."));
+		areaProcesos.get(20).getgG().get(0).agregarActividad(new Actividades("Establish and maintain procedures and criteria for validation."));
+		
+		areaProcesos.get(20).agregarGg(new Gg("The product or product components are validated to ensure they are suitable for use in their intended operating environment."));
+		areaProcesos.get(20).getgG().get(1).agregarActividad(new Actividades("Perform validation on selected products and product components."));
+		areaProcesos.get(20).getgG().get(1).agregarActividad(new Actividades("Analyze results of validation activities."));
 	}
 	
 	public void inicializarVAL() {
 		
-		areaProcesos.add(new AreaProceso("CAR"));
+		areaProcesos.add(new AreaProceso("VAL"));
+		areaProcesos.get(21).agregarGg(new Gg("Preparation for verification is conducted."));
+		areaProcesos.get(21).getgG().get(0).agregarActividad(new Actividades("Select work products to be verified and verification methods to be used."));
+		areaProcesos.get(21).getgG().get(0).agregarActividad(new Actividades("Establish and maintain the environment needed to support verification.."));
+		areaProcesos.get(21).getgG().get(0).agregarActividad(new Actividades("Establish and maintain verification procedures and criteria for the selected work products."));
+		
+		areaProcesos.get(21).agregarGg(new Gg("Peer reviews are performed on selected work products. "));
+		areaProcesos.get(21).getgG().get(1).agregarActividad(new Actividades("Prepare for peer reviews of selected work products."));
+		areaProcesos.get(21).getgG().get(1).agregarActividad(new Actividades("Conduct peer reviews of selected work products and identify issues resulting from these reviews."));
+		areaProcesos.get(21).getgG().get(1).agregarActividad(new Actividades("Analyze data about the preparation, conduct, and results of the peer reviews."));
+		
+		areaProcesos.get(21).agregarGg(new Gg("Selected work products are verified against their specified requirements."));
+		areaProcesos.get(21).getgG().get(2).agregarActividad(new Actividades("Perform verification on selected work products."));
+		areaProcesos.get(21).getgG().get(2).agregarActividad(new Actividades("Analyze results of all verification activities."));
+		
 	}
 	
 	
@@ -255,6 +381,4 @@ public class Dev {
 	public void setAreaProcesos(List<AreaProceso> areaProcesos) {
 		this.areaProcesos = areaProcesos;
 	}
-	
-	
 }
