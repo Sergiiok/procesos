@@ -13,8 +13,6 @@ public class Dev {
 		inicializarCAR();
 		inicializarCM();
 		inicializarDAR();
-		inicializarGG2();
-		inicializarGG3();
 		inicializarIPM();
 		inicializarMA();
 		inicializarOPD();
@@ -32,10 +30,11 @@ public class Dev {
 		inicializarRSKM();
 		inicializarSAM();
 		inicializarTS();
-		inicializarTS();
-		inicializarVAL();
 		inicializarVER();
+		inicializarVAL();
 		
+		inicializarGG2();
+		inicializarGG3();
 		
 	}
 	
@@ -53,9 +52,13 @@ public class Dev {
 			return "You are alredy in this level";
 		}
 		
-		for (int i = a+1; i < b; i++) {
-			r += txt(i, area);
+		for (int i = a+1; i <= b; i++) {
+			if(i<=3)
+				r += txt(i, area);
 		}
+		
+		if(b > 3)
+			r +="\n The max level is 3";
 		
 		return r;
 	}
@@ -78,9 +81,9 @@ public class Dev {
 			}
 			r += "GG 1:  Achieve Specific Goals "+" \n";
 			for (int i = 0; i < p.getgG().size(); i++) {
-				r += "   SG "+i+": "+p.getgG().get(i).getName()+" \n";
+				r += "   SG "+(i+1)+": "+p.getgG().get(i).getName()+" \n";
 				for (int j = 0; j < p.getgG().get(i).getActividades().size(); j++) {
-					r +="   SP "+i+"."+j+": "+p.getgG().get(i).getActividades().get(j).getActividad()+" \n";
+					r +="      SP "+(i+1)+"."+(j+1)+": "+p.getgG().get(i).getActividades().get(j).getActividad()+" \n";
 				}
 			}
 			break;
@@ -96,9 +99,10 @@ public class Dev {
 				r = "There is no Process Area introduced";
 				return r;
 			}
+//			r += areaProcesos.get(areaProcesos.size()-2).getgG().get(0).getActividades().size()+"    ";
 			r += "GG 2: "+areaProcesos.get(areaProcesos.size()-2).getgG().get(0).getName()+" \n";
-			for (int i = 0; i < areaProcesos.get(areaProcesos.size()-2).getgG().size(); i++) {
-				r +="   GP 2."+i+": "+areaProcesos.get(areaProcesos.size()-2).getgG().get(0).getActividades().get(i).getActividad()+" \n";
+			for (int i = 0; i < areaProcesos.get(areaProcesos.size()-2).getgG().get(0).getActividades().size(); i++) {
+				r +="   GP 2."+(i+1)+": "+areaProcesos.get(areaProcesos.size()-2).getgG().get(0).getActividades().get(i).getActividad()+" \n";
 			}
 			
 			break;
@@ -115,8 +119,8 @@ public class Dev {
 				return r;
 			}
 			r += "GG 3: "+areaProcesos.get(areaProcesos.size()-1).getgG().get(0).getName()+" \n";
-			for (int i = 0; i < areaProcesos.get(areaProcesos.size()-1).getgG().size(); i++) {
-				r +="   GP 3."+i+": "+areaProcesos.get(areaProcesos.size()-2).getgG().get(0).getActividades().get(i).getActividad()+" \n";
+			for (int i = 0; i < areaProcesos.get(areaProcesos.size()-1).getgG().get(0).getActividades().size(); i++) {
+				r +="   GP 3."+(i+1)+": "+areaProcesos.get(areaProcesos.size()-2).getgG().get(0).getActividades().get(i).getActividad()+" \n";
 			}
 			
 			break;
